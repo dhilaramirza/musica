@@ -32,7 +32,6 @@ button {
   background: #080808;
 }
 
-
 /* ================================================= */
 /* SIDEBAR */
 /* ================================================= */
@@ -40,20 +39,14 @@ button {
 .sidebar {
   width: 225px;
   height: 100vh;
-
   position: fixed;
   left: 0;
   top: 0;
-
   z-index: 50;
-
   padding: 34px 25px;
-
   display: flex;
   flex-direction: column;
-
   background: #111111;
-
   border-right: 1px solid #252525;
 }
 
@@ -70,33 +63,23 @@ button {
 
 .sidebar-title {
   margin-bottom: 14px;
-
   color: #686868;
   font-size: 8px;
   font-weight: 600;
-
   letter-spacing: 3px;
 }
 
 .sidebar-link {
   width: 100%;
-
   padding: 11px 10px;
-
   display: flex;
   align-items: center;
   gap: 13px;
-
   background: transparent;
-
   color: #999999;
-
   border-radius: 8px;
-
   text-align: left;
-
   font-size: 12px;
-
   transition: 0.25s;
 }
 
@@ -111,7 +94,7 @@ button {
 }
 
 .sidebar-link.active {
-  background: white;
+  background: #ffffff;
   color: #111111;
 }
 
@@ -121,11 +104,9 @@ button {
 
 .profile-mini {
   padding-top: 20px;
-
   display: flex;
   align-items: center;
   gap: 10px;
-
   border-top: 1px solid rgba(255,255,255,0.1);
 }
 
@@ -133,16 +114,11 @@ button {
 .top-avatar {
   width: 34px;
   height: 34px;
-
   display: grid;
   place-items: center;
-
   border-radius: 50%;
-
-  background: #c8e8d0;
-
-  color: #314536;
-
+  background: #E6A0B6;
+  color: #32141f;
   font-size: 11px;
   font-weight: 700;
 }
@@ -154,14 +130,10 @@ button {
 
 .profile-mini small {
   display: block;
-
   margin-top: 3px;
-
   color: #777777;
-
   font-size: 8px;
 }
-
 
 /* ================================================= */
 /* MAIN */
@@ -169,12 +141,9 @@ button {
 
 .main-content {
   min-height: 100vh;
-
   margin-left: 225px;
-
   padding: 0 42px 125px;
 }
-
 
 /* ================================================= */
 /* TOPBAR */
@@ -182,7 +151,6 @@ button {
 
 .topbar {
   height: 85px;
-
   display: flex;
   align-items: center;
   gap: 20px;
@@ -195,17 +163,12 @@ button {
 .search-container {
   width: 320px;
   height: 42px;
-
   display: flex;
   align-items: center;
   gap: 10px;
-
   padding: 0 15px;
-
   background: #151515;
-
   border: 1px solid #292929;
-
   border-radius: 9px;
 }
 
@@ -216,14 +179,10 @@ button {
 
 .search-container input {
   width: 100%;
-
   border: none;
   outline: none;
-
   background: transparent;
-
   color: white;
-
   font-size: 11px;
 }
 
@@ -233,7 +192,6 @@ button {
 
 .top-account {
   margin-left: auto;
-
   display: flex;
   align-items: center;
   gap: 10px;
@@ -250,14 +208,10 @@ button {
 
 .top-account-info span {
   display: block;
-
   margin-top: 3px;
-
   color: #777777;
-
   font-size: 7px;
 }
-
 
 /* ================================================= */
 /* HERO */
@@ -265,104 +219,80 @@ button {
 
 .featured {
   min-height: 430px;
-
   padding: 48px 52px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   position: relative;
-
   overflow: hidden;
-
   border-radius: 8px;
 
   background:
     radial-gradient(
       circle at 78% 40%,
-      rgba(245, 165, 180, 0.35),
+      rgba(230, 106, 145, 0.42),
       transparent 25%
     ),
-    #587864;
+    linear-gradient(
+      135deg,
+      #4A202F,
+      #5A2638 50%,
+      #351822
+    );
 }
 
 .featured-copy {
   position: relative;
   z-index: 5;
-
   max-width: 490px;
 }
 
 .featured-label {
-  color: #d2ead8;
-
+  color: #E9A4B9;
   font-size: 8px;
-
   font-weight: 700;
-
   letter-spacing: 3px;
 }
 
 .featured h1 {
   margin-top: 17px;
-
   color: white;
-
   font-size: clamp(52px, 5vw, 78px);
-
   line-height: 0.9;
-
   letter-spacing: -5px;
 }
 
 .featured h1 em {
-  color: #d5edda;
-
+  color: #F2A1B8;
   font-family: "Playfair Display", serif;
-
   font-weight: 500;
 }
 
 .featured-description {
   max-width: 375px;
-
   margin-top: 22px;
-
-  color: #d0ddd3;
-
+  color: #D8C0C8;
   font-size: 11px;
-
   line-height: 1.7;
 }
 
 .listen-button {
   margin-top: 27px;
-
   padding: 13px 22px;
-
   display: flex;
   align-items: center;
   gap: 9px;
-
   border-radius: 30px;
-
   background: #191919;
-
   color: white;
-
   font-size: 10px;
-
   transition: 0.3s;
 }
 
 .listen-button:hover {
   transform: translateY(-3px);
-
-  box-shadow:
-    0 12px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
 }
-
 
 /* ================================================= */
 /* RADIO AREA */
@@ -371,37 +301,26 @@ button {
 .featured-visual {
   width: 500px;
   height: 360px;
-
   position: relative;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   flex-shrink: 0;
 }
 
 .visual-glow {
   width: 300px;
   height: 300px;
-
   position: absolute;
-
   border-radius: 50%;
-
-  background: #b8e6c4;
-
+  background: #E66A91;
   filter: blur(70px);
-
-  opacity: 0.4;
-
+  opacity: 0.42;
   animation: glowPulse 4s ease-in-out infinite;
 }
 
 @keyframes glowPulse {
-
-  0%,
-  100% {
+  0%, 100% {
     transform: scale(0.9);
   }
 
@@ -412,35 +331,28 @@ button {
 
 .visual-ring {
   position: absolute;
-
   border-radius: 50%;
-
   border: 1px solid rgba(255,255,255,0.2);
 }
 
 .ring-one {
   width: 330px;
   height: 330px;
-
   animation: rotateRing 18s linear infinite;
 }
 
 .ring-two {
   width: 270px;
   height: 270px;
-
   border-style: dashed;
-
   animation: rotateRing 12s linear infinite reverse;
 }
 
 @keyframes rotateRing {
-
   to {
     transform: rotate(360deg);
   }
 }
-
 
 /* ================================================= */
 /* RETRO STEREO */
@@ -449,11 +361,8 @@ button {
 .retro-stereo {
   width: 260px;
   height: 260px;
-
   position: relative;
-
   z-index: 10;
-
   border-radius: 50%;
 
   background:
@@ -475,9 +384,7 @@ button {
 }
 
 @keyframes stereoFloat {
-
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0) rotate(-2deg);
   }
 
@@ -486,18 +393,16 @@ button {
   }
 }
 
-
-/* black vinyl disk */
+/* ================================================= */
+/* BLACK VINYL DISK */
+/* ================================================= */
 
 .stereo-disc {
   width: 135px;
   height: 135px;
-
   position: absolute;
-
   left: 30px;
   top: 54px;
-
   border-radius: 50%;
 
   background:
@@ -524,7 +429,6 @@ button {
 }
 
 @keyframes spinDisk {
-
   from {
     transform: rotate(0deg);
   }
@@ -536,11 +440,8 @@ button {
 
 .disc-lines {
   position: absolute;
-
   inset: 12px;
-
   border-radius: 50%;
-
   border: 1px solid #292929;
 
   box-shadow:
@@ -553,14 +454,10 @@ button {
 .disc-center {
   width: 30px;
   height: 30px;
-
   position: absolute;
-
   left: 50%;
   top: 50%;
-
   transform: translate(-50%, -50%);
-
   border-radius: 50%;
 
   background:
@@ -577,34 +474,26 @@ button {
 .disc-hole {
   width: 7px;
   height: 7px;
-
   position: absolute;
-
   left: 50%;
   top: 50%;
-
   transform: translate(-50%, -50%);
-
   border-radius: 50%;
-
   background: #050505;
 }
 
-
-/* speaker */
+/* ================================================= */
+/* SPEAKER */
+/* ================================================= */
 
 .stereo-speaker {
   width: 70px;
   height: 70px;
-
   position: absolute;
-
   right: 35px;
   top: 80px;
-
   display: grid;
   place-items: center;
-
   border-radius: 50%;
 
   background:
@@ -625,74 +514,59 @@ button {
 .speaker-ring {
   width: 35px;
   height: 35px;
-
   display: grid;
   place-items: center;
-
   border-radius: 50%;
-
   background: #171717;
-
   border: 3px solid #555555;
 }
 
 .speaker-center {
   width: 13px;
   height: 13px;
-
   border-radius: 50%;
-
   background: #050505;
-
   border: 2px solid #666666;
 }
 
-
-/* little lights */
+/* ================================================= */
+/* LITTLE LIGHTS */
+/* ================================================= */
 
 .stereo-lights {
   position: absolute;
-
   left: 45px;
   bottom: 52px;
-
   display: flex;
-
   gap: 6px;
 }
 
 .stereo-lights span {
   width: 5px;
   height: 5px;
-
   border-radius: 50%;
-
-  background: #b8dfc1;
+  background: #E66A91;
 
   box-shadow:
-    0 0 8px #d0f0d6;
+    0 0 8px #F09AAA;
 }
 
-
-/* knobs */
+/* ================================================= */
+/* KNOBS */
+/* ================================================= */
 
 .stereo-knobs {
   position: absolute;
-
   right: 40px;
   bottom: 38px;
-
   display: flex;
-
   gap: 7px;
 }
 
 .stereo-knobs i {
   width: 13px;
   height: 13px;
-
   display: block;
-
   border-radius: 50%;
 
   background:
@@ -706,7 +580,6 @@ button {
   border: 1px solid #666666;
 }
 
-
 /* ================================================= */
 /* SECTIONS */
 /* ================================================= */
@@ -717,7 +590,6 @@ button {
 
 .section-heading {
   margin-bottom: 20px;
-
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -725,27 +597,20 @@ button {
 
 .section-heading small {
   color: #777777;
-
   font-size: 7px;
-
   letter-spacing: 3px;
 }
 
 .section-heading h2 {
   margin-top: 5px;
-
   color: white;
-
   font-size: 23px;
-
   letter-spacing: -0.8px;
 }
 
 .section-heading button {
   background: transparent;
-
   color: #777777;
-
   font-size: 9px;
 }
 
@@ -753,84 +618,61 @@ button {
   color: white;
 }
 
-
 /* ================================================= */
 /* PLAYLISTS */
 /* ================================================= */
 
 .playlist-grid {
   display: grid;
-
   grid-template-columns: repeat(4, 1fr);
-
   gap: 13px;
 }
 
 .playlist-card {
   min-height: 145px;
-
   padding: 20px;
-
   position: relative;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   border-radius: 7px;
-
   text-align: left;
-
   color: white;
-
   overflow: hidden;
-
   transition: 0.3s;
 }
 
 .playlist-card:hover {
   transform: translateY(-6px);
-
-  box-shadow:
-    0 15px 25px rgba(0,0,0,0.4);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.4);
 }
 
 .playlist-symbol {
   font-size: 30px;
-
   opacity: 0.7;
 }
 
 .playlist-info strong {
   display: block;
-
   font-size: 13px;
 }
 
 .playlist-info span {
   display: block;
-
   margin-top: 4px;
-
   color: rgba(255,255,255,0.55);
-
   font-size: 8px;
 }
 
 .playlist-arrow {
   position: absolute;
-
   right: 17px;
   bottom: 18px;
-
   width: 27px;
   height: 27px;
-
   display: grid;
   place-items: center;
-
   border-radius: 50%;
-
   background: rgba(255,255,255,0.15);
 }
 
@@ -847,9 +689,8 @@ button {
 }
 
 .playlist-green {
-  background: #91b99a;
+  background: #425d3b;
 }
-
 
 /* ================================================= */
 /* SONGS */
@@ -857,13 +698,11 @@ button {
 
 .song-list {
   display: flex;
-
   flex-direction: column;
 }
 
 .song-row {
   min-height: 68px;
-
   display: grid;
 
   grid-template-columns:
@@ -875,15 +714,10 @@ button {
     35px;
 
   align-items: center;
-
   gap: 13px;
-
   padding: 6px 10px;
-
   border-bottom: 1px solid #252525;
-
   border-radius: 5px;
-
   transition: 0.25s;
 }
 
@@ -894,79 +728,61 @@ button {
 
 .song-number {
   color: #666666;
-
   font-size: 9px;
 }
 
 .song-cover {
   width: 48px;
   height: 48px;
-
   display: grid;
   place-items: center;
-
   border-radius: 5px;
-
   background-size: cover;
   background-position: center;
-
   overflow: hidden;
 }
 
 .song-name strong {
   display: block;
-
   color: #eeeeee;
-
   font-size: 11px;
 }
 
 .song-name small {
   display: block;
-
   margin-top: 4px;
-
   color: #777777;
-
   font-size: 8px;
 }
 
 .song-time {
   color: #777777;
-
   font-size: 8px;
 }
 
 .heart-button,
 .song-play {
   background: transparent;
-
   color: #777777;
-
   font-size: 15px;
 }
 
 .heart-button:hover {
-  color: #e36b7d;
+  color: #E36B7D;
 }
 
 .song-play {
   width: 28px;
   height: 28px;
-
   border-radius: 50%;
-
   background: #222222;
-
   font-size: 8px;
 }
 
 .song-play:hover {
   background: white;
-
   color: #111111;
 }
-
 
 /* ================================================= */
 /* EQUALIZER */
@@ -974,24 +790,17 @@ button {
 
 .mini-equalizer {
   height: 24px;
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   gap: 3px;
 }
 
 .mini-equalizer i {
   width: 3px;
   height: 8px;
-
   border-radius: 5px;
-
   background: white;
-
   animation: miniBars 0.8s ease-in-out infinite alternate;
 }
 
@@ -1012,7 +821,6 @@ button {
 }
 
 @keyframes miniBars {
-
   0% {
     height: 5px;
   }
@@ -1026,26 +834,20 @@ button {
   }
 }
 
-
 /* ================================================= */
 /* ARTISTS */
 /* ================================================= */
 
 .artist-grid {
   display: grid;
-
   grid-template-columns: repeat(4, 1fr);
-
   gap: 15px;
 }
 
 .artist-card {
   background: transparent;
-
   color: white;
-
   text-align: left;
-
   transition: 0.3s;
 }
 
@@ -1055,29 +857,21 @@ button {
 
 .artist-art {
   height: 190px;
-
   position: relative;
-
   overflow: hidden;
-
   border-radius: 7px;
-
   background-size: cover;
-
   background-position: center;
-
   transition: 0.4s;
 }
 
 .artist-card:hover .artist-art {
   transform: scale(1.025);
-
   filter: saturate(1.15);
 }
 
 .artist-image-overlay {
   position: absolute;
-
   inset: 0;
 
   background:
@@ -1094,20 +888,15 @@ button {
 
 .artist-info strong {
   display: block;
-
   font-size: 11px;
 }
 
 .artist-info small {
   display: block;
-
   margin-top: 4px;
-
   color: #777777;
-
   font-size: 8px;
 }
-
 
 /* ================================================= */
 /* RECENT */
@@ -1115,69 +904,48 @@ button {
 
 .recent-list {
   display: flex;
-
   gap: 12px;
-
   overflow-x: auto;
 }
 
 .recent-card {
   min-width: 190px;
-
   padding: 10px;
-
   display: flex;
-
   align-items: center;
-
   gap: 10px;
-
   background: #151515;
-
   color: white;
-
   border-radius: 7px;
-
   text-align: left;
-
   transition: 0.3s;
 }
 
 .recent-card:hover {
   background: #222222;
-
   transform: translateY(-3px);
 }
 
 .recent-image {
   width: 42px;
   height: 42px;
-
   flex-shrink: 0;
-
   border-radius: 5px;
-
   background-size: cover;
-
   background-position: center;
 }
 
 .recent-card strong {
   display: block;
-
   font-size: 9px;
 }
 
 .recent-card small {
   display: block;
-
   margin-top: 3px;
-
   color: #777777;
-
   font-size: 7px;
 }
-
 
 /* ================================================= */
 /* BOTTOM PLAYER */
@@ -1185,54 +953,37 @@ button {
 
 .player {
   height: 92px;
-
   position: fixed;
-
   left: 225px;
   right: 0;
   bottom: 0;
-
   z-index: 100;
-
   padding: 0 35px;
-
   display: grid;
-
   grid-template-columns: 1fr auto;
-
   align-items: center;
-
   background: #111111;
-
   border-top: 1px solid #2b2b2b;
 
   box-shadow:
     0 -10px 30px rgba(0,0,0,0.5);
 }
 
-
 /* current song */
 
 .player-song {
   display: flex;
-
   align-items: center;
-
   gap: 11px;
-
   min-width: 0;
 }
 
 .player-cover {
   width: 48px;
   height: 48px;
-
   flex-shrink: 0;
-
   border-radius: 6px;
-
   background-size: cover;
-
   background-position: center;
 
   box-shadow:
@@ -1244,9 +995,7 @@ button {
 }
 
 @keyframes playerPulse {
-
-  0%,
-  100% {
+  0%, 100% {
     transform: scale(1);
   }
 
@@ -1261,36 +1010,27 @@ button {
 
 .player-details strong {
   display: block;
-
   color: white;
-
   font-size: 10px;
 }
 
 .player-details span {
   display: block;
-
   margin-top: 4px;
-
   color: #777777;
-
   font-size: 8px;
 }
 
 .player-heart {
   margin-left: 15px;
-
   background: transparent;
-
   color: #777777;
-
   font-size: 16px;
 }
 
 .player-heart:hover {
-  color: #e36b7d;
+  color: #E36B7D;
 }
-
 
 /* ================================================= */
 /* PLAYER MIDDLE */
@@ -1298,36 +1038,25 @@ button {
 
 .player-middle {
   width: 430px;
-
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
-
   gap: 8px;
 }
-
 
 /* controls */
 
 .player-controls {
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   gap: 18px;
 }
 
 .player-controls button {
   background: transparent;
-
   color: #888888;
-
   font-size: 14px;
-
   transition: 0.2s;
 }
 
@@ -1338,16 +1067,11 @@ button {
 .big-play {
   width: 40px;
   height: 40px;
-
   border-radius: 50%;
-
   background: white !important;
-
   color: #111111 !important;
-
   font-size: 9px !important;
 }
-
 
 /* ================================================= */
 /* PROGRESS */
@@ -1355,43 +1079,29 @@ button {
 
 .player-progress {
   width: 100%;
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   gap: 9px;
-
   color: #777777;
-
   font-size: 8px;
 }
 
 .progress-track {
   width: 300px;
   height: 4px;
-
   background: #363636;
-
   border-radius: 20px;
-
   overflow: hidden;
-
   cursor: pointer;
 }
 
 .progress-track div {
   height: 100%;
-
-  background: #ffffff;
-
+  background: #E66A91;
   border-radius: 20px;
-
   transition: width 0.15s linear;
 }
-
 
 /* ================================================= */
 /* TABLET */
@@ -1405,7 +1115,6 @@ button {
 
   .main-content {
     margin-left: 190px;
-
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -1439,7 +1148,6 @@ button {
   }
 }
 
-
 /* ================================================= */
 /* MOBILE */
 /* ================================================= */
@@ -1452,11 +1160,7 @@ button {
 
   .main-content {
     margin-left: 0;
-
-    padding:
-      0
-      16px
-      125px;
+    padding: 0 16px 125px;
   }
 
   .topbar {
@@ -1465,17 +1169,13 @@ button {
 
   .mobile-logo {
     display: block;
-
     font-size: 14px;
-
     font-weight: 700;
-
     letter-spacing: 3px;
   }
 
   .search-container {
     width: auto;
-
     flex: 1;
   }
 
@@ -1485,13 +1185,9 @@ button {
 
   .featured {
     min-height: 650px;
-
     padding: 30px 25px;
-
     flex-direction: column;
-
     align-items: flex-start;
-
     justify-content: space-between;
   }
 
@@ -1501,7 +1197,6 @@ button {
 
   .featured-visual {
     width: 100%;
-
     height: 330px;
   }
 
@@ -1513,7 +1208,6 @@ button {
   .stereo-disc {
     width: 110px;
     height: 110px;
-
     left: 25px;
     top: 45px;
   }
@@ -1521,7 +1215,6 @@ button {
   .stereo-speaker {
     right: 28px;
     top: 65px;
-
     width: 60px;
     height: 60px;
   }
@@ -1566,17 +1259,11 @@ button {
   .player {
     left: 0;
     right: 0;
-
     height: 110px;
-
     padding: 8px 15px;
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
-
     gap: 5px;
   }
 
@@ -1586,7 +1273,6 @@ button {
 
   .player-middle {
     width: 100%;
-
     gap: 5px;
   }
 
@@ -1603,7 +1289,6 @@ button {
   }
 }
 
-
 /* ================================================= */
 /* 390PX */
 /* ================================================= */
@@ -1617,7 +1302,6 @@ button {
 
   .featured {
     min-height: 620px;
-
     padding: 25px 20px;
   }
 
@@ -1641,7 +1325,6 @@ button {
   .stereo-disc {
     width: 95px;
     height: 95px;
-
     left: 22px;
     top: 40px;
   }
@@ -1649,7 +1332,6 @@ button {
   .stereo-speaker {
     width: 52px;
     height: 52px;
-
     right: 23px;
     top: 57px;
   }
@@ -1670,7 +1352,6 @@ button {
 
   .artist-grid {
     grid-template-columns: 1fr 1fr;
-
     gap: 10px;
   }
 
@@ -1684,16 +1365,13 @@ button {
 
   .player-details {
     max-width: 130px;
-
     overflow: hidden;
   }
 
   .player-details strong,
   .player-details span {
     white-space: nowrap;
-
     overflow: hidden;
-
     text-overflow: ellipsis;
   }
 
@@ -1701,7 +1379,6 @@ button {
     width: 48vw;
   }
 }
-
 
 /* ================================================= */
 /* ACCOUNT */
@@ -1715,39 +1392,32 @@ button {
 .top-avatar {
   width: 38px;
   height: 38px;
-
   display: grid;
   place-items: center;
-
   padding: 0;
 
   border: 2px solid #202020;
-
   border-radius: 50%;
 
-  background: #c8e8d0;
-
-  color: #314536;
+  background: #E6A0B6;
+  color: #32141f;
 
   font-size: 12px;
   font-weight: 700;
 
   cursor: pointer;
-
   transition: 0.25s;
 }
 
 .top-avatar:hover {
   transform: scale(1.06);
-
-  border-color: #c8e8d0;
+  border-color: #E66A91;
 }
 
 .account-dropdown {
   width: 230px;
 
   position: absolute;
-
   top: 52px;
   right: 0;
 
@@ -1760,9 +1430,7 @@ button {
   gap: 12px;
 
   background: #181818;
-
   border: 1px solid #303030;
-
   border-radius: 10px;
 
   box-shadow:
@@ -1794,9 +1462,8 @@ button {
 
   border-radius: 50%;
 
-  background: #c8e8d0;
-
-  color: #314536;
+  background: #E6A0B6;
+  color: #32141f;
 
   font-size: 12px;
   font-weight: 700;
@@ -1804,18 +1471,13 @@ button {
 
 .account-dropdown-info strong {
   display: block;
-
   color: white;
-
   font-size: 11px;
 }
 
 .account-dropdown-info span {
   display: block;
-
   margin-top: 4px;
-
   color: #777777;
-
   font-size: 8px;
 }
