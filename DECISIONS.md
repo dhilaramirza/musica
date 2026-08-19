@@ -6,5 +6,5 @@ I could have gone with a typical Spotify-style layout — lots of cards, lots of
 Given the time I had, I focused most of my energy on the visuals and making the layout responsive, rather than adding a lot of extra functionality. With a full week, I'd take it further make the music content more dynamic, improve the smaller interactions, add better accessibility and keyboard support, and test across more devices and screen sizes. I'd also spend more time polishing the mobile experience.
 
 3. Where did you use AI tools, and what did you personally verify or change afterward?
-I used AI mainly as a coding assistant — for React/CSS help, debugging, and exploring design ideas. It sped things up, but I didn't treat the output as finished.
+I used AI mainly as a coding assistant for CSS help, debugging, and exploring design ideas. It sped things up, but I didn't treat the output as finished.
 I tested everything myself, fixed issues, and changed the layout and colors several times across different screen sizes. The final call on style, layout, and feel was mine. I deployed through GitHub and Vercel, and made sure I understood the project well enough to explain it in a follow-up
