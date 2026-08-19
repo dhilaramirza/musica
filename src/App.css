@@ -94,7 +94,7 @@ button {
 }
 
 .sidebar-link.active {
-  background: #ffffff;
+  background: white;
   color: #111111;
 }
 
@@ -117,8 +117,8 @@ button {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: #E6A0B6;
-  color: #32141f;
+  background: #D99AAD;
+  color: #29121A;
   font-size: 11px;
   font-weight: 700;
 }
@@ -230,14 +230,14 @@ button {
   background:
     radial-gradient(
       circle at 78% 40%,
-      rgba(230, 106, 145, 0.42),
+      rgba(213, 83, 127, 0.38),
       transparent 25%
     ),
     linear-gradient(
       135deg,
-      #4A202F,
-      #5A2638 50%,
-      #351822
+      #421C2A,
+      #4D2032 50%,
+      #2B121B
     );
 }
 
@@ -248,7 +248,7 @@ button {
 }
 
 .featured-label {
-  color: #E9A4B9;
+  color: #D39AAA;
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -263,7 +263,7 @@ button {
 }
 
 .featured h1 em {
-  color: #F2A1B8;
+  color: #E58DA8;
   font-family: "Playfair Display", serif;
   font-weight: 500;
 }
@@ -271,7 +271,7 @@ button {
 .featured-description {
   max-width: 375px;
   margin-top: 22px;
-  color: #D8C0C8;
+  color: #C8AAB5;
   font-size: 11px;
   line-height: 1.7;
 }
@@ -313,14 +313,15 @@ button {
   height: 300px;
   position: absolute;
   border-radius: 50%;
-  background: #E66A91;
+  background: #D6537F;
   filter: blur(70px);
-  opacity: 0.42;
+  opacity: 0.4;
   animation: glowPulse 4s ease-in-out infinite;
 }
 
 @keyframes glowPulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(0.9);
   }
 
@@ -384,7 +385,8 @@ button {
 }
 
 @keyframes stereoFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotate(-2deg);
   }
 
@@ -545,10 +547,10 @@ button {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: #E66A91;
+  background: #D6537F;
 
   box-shadow:
-    0 0 8px #F09AAA;
+    0 0 8px #E58DA8;
 }
 
 /* ================================================= */
@@ -768,7 +770,7 @@ button {
 }
 
 .heart-button:hover {
-  color: #E36B7D;
+  color: #D6537F;
 }
 
 .song-play {
@@ -800,7 +802,7 @@ button {
   width: 3px;
   height: 8px;
   border-radius: 5px;
-  background: white;
+  background: #D6537F;
   animation: miniBars 0.8s ease-in-out infinite alternate;
 }
 
@@ -995,7 +997,8 @@ button {
 }
 
 @keyframes playerPulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
 
@@ -1029,7 +1032,7 @@ button {
 }
 
 .player-heart:hover {
-  color: #E36B7D;
+  color: #D6537F;
 }
 
 /* ================================================= */
@@ -1098,7 +1101,7 @@ button {
 
 .progress-track div {
   height: 100%;
-  background: #E66A91;
+  background: #D6537F;
   border-radius: 20px;
   transition: width 0.15s linear;
 }
@@ -1395,40 +1398,31 @@ button {
   display: grid;
   place-items: center;
   padding: 0;
-
   border: 2px solid #202020;
   border-radius: 50%;
-
-  background: #E6A0B6;
-  color: #32141f;
-
+  background: #D99AAD;
+  color: #29121A;
   font-size: 12px;
   font-weight: 700;
-
   cursor: pointer;
   transition: 0.25s;
 }
 
 .top-avatar:hover {
   transform: scale(1.06);
-  border-color: #E66A91;
+  border-color: #D6537F;
 }
 
 .account-dropdown {
   width: 230px;
-
   position: absolute;
   top: 52px;
   right: 0;
-
   z-index: 200;
-
   padding: 16px;
-
   display: flex;
   align-items: center;
   gap: 12px;
-
   background: #181818;
   border: 1px solid #303030;
   border-radius: 10px;
@@ -1454,17 +1448,12 @@ button {
 .account-dropdown-avatar {
   width: 38px;
   height: 38px;
-
   flex-shrink: 0;
-
   display: grid;
   place-items: center;
-
   border-radius: 50%;
-
-  background: #E6A0B6;
-  color: #32141f;
-
+  background: #D99AAD;
+  color: #29121A;
   font-size: 12px;
   font-weight: 700;
 }
