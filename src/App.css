@@ -139,9 +139,9 @@ button {
 
   border-radius: 50%;
 
-  background: #b5c9ae;
+  background: #78b98d;
 
-  color: #1b241b;
+  color: #182018;
 
   font-size: 11px;
   font-weight: 700;
@@ -284,7 +284,7 @@ button {
       rgba(230, 83, 104, 0.35),
       transparent 25%
     ),
-    #202d23;
+    #26382a;
 }
 
 .featured-copy {
@@ -295,7 +295,7 @@ button {
 }
 
 .featured-label {
-  color: #9db49d;
+  color: #b4d3b9;
 
   font-size: 8px;
 
@@ -317,7 +317,7 @@ button {
 }
 
 .featured h1 em {
-  color: #a8bea4;
+  color: #b8d7be;
 
   font-family: "Playfair Display", serif;
 
@@ -329,7 +329,7 @@ button {
 
   margin-top: 22px;
 
-  color: #a8b3a8;
+  color: #b3c5b6;
 
   font-size: 11px;
 
@@ -389,7 +389,7 @@ button {
 
   border-radius: 50%;
 
-  background: #7caa78;
+  background: #78b98d;
 
   filter: blur(70px);
 
@@ -667,10 +667,10 @@ button {
 
   border-radius: 50%;
 
-  background: #526b50;
+  background: #70a983;
 
   box-shadow:
-    0 0 8px #779f72;
+    0 0 8px #8bc49a;
 }
 
 
@@ -847,7 +847,7 @@ button {
 }
 
 .playlist-green {
-  background: #425d3b;
+  background: #4f7048;
 }
 
 
@@ -1701,6 +1701,8 @@ button {
     width: 48vw;
   }
 }
+
+
 /* ================================================= */
 /* ACCOUNT */
 /* ================================================= */
@@ -1723,7 +1725,7 @@ button {
 
   border-radius: 50%;
 
-  background: #b5c9ae;
+  background: #78b98d;
 
   color: #182018;
 
@@ -1738,7 +1740,7 @@ button {
 .top-avatar:hover {
   transform: scale(1.06);
 
-  border-color: #b5c9ae;
+  border-color: #78b98d;
 }
 
 .account-dropdown {
@@ -1792,7 +1794,7 @@ button {
 
   border-radius: 50%;
 
-  background: #b5c9ae;
+  background: #78b98d;
 
   color: #182018;
 
@@ -1817,4 +1819,3 @@ button {
 
   font-size: 8px;
 }
-
