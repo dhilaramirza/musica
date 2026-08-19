@@ -117,8 +117,8 @@ button {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: #D99AAD;
-  color: #29121A;
+  background: #C98A9D;
+  color: #210C14;
   font-size: 11px;
   font-weight: 700;
 }
@@ -192,6 +192,7 @@ button {
 
 .top-account {
   margin-left: auto;
+  position: relative;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -214,7 +215,7 @@ button {
 }
 
 /* ================================================= */
-/* HERO */
+/* HERO - DARKER BURGUNDY */
 /* ================================================= */
 
 .featured {
@@ -230,14 +231,14 @@ button {
   background:
     radial-gradient(
       circle at 78% 40%,
-      rgba(213, 83, 127, 0.38),
+      rgba(190, 48, 91, 0.32),
       transparent 25%
     ),
     linear-gradient(
       135deg,
-      #421C2A,
-      #4D2032 50%,
-      #2B121B
+      #32121F,
+      #3D1425 50%,
+      #200B13
     );
 }
 
@@ -248,7 +249,7 @@ button {
 }
 
 .featured-label {
-  color: #D39AAA;
+  color: #C9869B;
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -263,7 +264,7 @@ button {
 }
 
 .featured h1 em {
-  color: #E58DA8;
+  color: #DC7897;
   font-family: "Playfair Display", serif;
   font-weight: 500;
 }
@@ -271,7 +272,7 @@ button {
 .featured-description {
   max-width: 375px;
   margin-top: 22px;
-  color: #C8AAB5;
+  color: #C2A0AD;
   font-size: 11px;
   line-height: 1.7;
 }
@@ -313,7 +314,7 @@ button {
   height: 300px;
   position: absolute;
   border-radius: 50%;
-  background: #D6537F;
+  background: #B93660;
   filter: blur(70px);
   opacity: 0.4;
   animation: glowPulse 4s ease-in-out infinite;
@@ -396,7 +397,7 @@ button {
 }
 
 /* ================================================= */
-/* BLACK VINYL DISK */
+/* VINYL */
 /* ================================================= */
 
 .stereo-disc {
@@ -532,7 +533,7 @@ button {
 }
 
 /* ================================================= */
-/* LITTLE LIGHTS */
+/* LIGHTS */
 /* ================================================= */
 
 .stereo-lights {
@@ -547,10 +548,10 @@ button {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: #D6537F;
+  background: #B93660;
 
   box-shadow:
-    0 0 8px #E58DA8;
+    0 0 8px #DC7897;
 }
 
 /* ================================================= */
@@ -770,7 +771,7 @@ button {
 }
 
 .heart-button:hover {
-  color: #D6537F;
+  color: #C23E68;
 }
 
 .song-play {
@@ -802,7 +803,7 @@ button {
   width: 3px;
   height: 8px;
   border-radius: 5px;
-  background: #D6537F;
+  background: #C23E68;
   animation: miniBars 0.8s ease-in-out infinite alternate;
 }
 
@@ -950,7 +951,7 @@ button {
 }
 
 /* ================================================= */
-/* BOTTOM PLAYER */
+/* BOTTOM PLAYER - DESKTOP */
 /* ================================================= */
 
 .player {
@@ -970,8 +971,6 @@ button {
   box-shadow:
     0 -10px 30px rgba(0,0,0,0.5);
 }
-
-/* current song */
 
 .player-song {
   display: flex;
@@ -1032,12 +1031,8 @@ button {
 }
 
 .player-heart:hover {
-  color: #D6537F;
+  color: #C23E68;
 }
-
-/* ================================================= */
-/* PLAYER MIDDLE */
-/* ================================================= */
 
 .player-middle {
   width: 430px;
@@ -1046,8 +1041,6 @@ button {
   align-items: center;
   gap: 8px;
 }
-
-/* controls */
 
 .player-controls {
   display: flex;
@@ -1076,10 +1069,6 @@ button {
   font-size: 9px !important;
 }
 
-/* ================================================= */
-/* PROGRESS */
-/* ================================================= */
-
 .player-progress {
   width: 100%;
   display: flex;
@@ -1101,7 +1090,7 @@ button {
 
 .progress-track div {
   height: 100%;
-  background: #D6537F;
+  background: #C23E68;
   border-radius: 20px;
   transition: width 0.15s linear;
 }
@@ -1163,7 +1152,7 @@ button {
 
   .main-content {
     margin-left: 0;
-    padding: 0 16px 125px;
+    padding: 0 16px 155px;
   }
 
   .topbar {
@@ -1259,41 +1248,122 @@ button {
     display: none;
   }
 
+  /* ================================================= */
+  /* MOBILE PLAYER FIX */
+  /* ================================================= */
+
   .player {
     left: 0;
     right: 0;
-    height: 110px;
-    padding: 8px 15px;
+    bottom: 0;
+
+    width: 100%;
+    height: 128px;
+
+    padding: 10px 14px 9px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
+    align-items: stretch;
+
+    gap: 7px;
+
+    overflow: hidden;
   }
 
   .player-song {
     width: 100%;
+    min-width: 0;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .player-cover {
+    width: 40px;
+    height: 40px;
+  }
+
+  .player-details {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .player-details strong {
+    font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .player-details span {
+    font-size: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .player-heart {
+    margin-left: auto;
+    padding: 5px;
+    flex-shrink: 0;
   }
 
   .player-middle {
     width: 100%;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
     gap: 5px;
   }
 
   .player-controls {
-    gap: 12px;
+    width: 100%;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+  }
+
+  .player-controls button {
+    font-size: 13px;
+  }
+
+  .big-play {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
   }
 
   .player-progress {
     width: 100%;
+    height: 15px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+    font-size: 7px;
   }
 
   .progress-track {
-    width: 55vw;
+    flex: 1;
+    width: auto;
+    min-width: 0;
+    height: 4px;
   }
 }
 
 /* ================================================= */
-/* 390PX */
+/* 390PX - EXTRA MOBILE FIX */
 /* ================================================= */
 
 @media (max-width: 390px) {
@@ -1301,6 +1371,9 @@ button {
   .main-content {
     padding-left: 12px;
     padding-right: 12px;
+
+    /* space for bottom player */
+    padding-bottom: 160px;
   }
 
   .featured {
@@ -1366,8 +1439,25 @@ button {
     font-size: 20px;
   }
 
+  /* FINAL 390PX PLAYER */
+
+  .player {
+    height: 132px;
+    padding: 9px 12px 8px;
+    gap: 6px;
+  }
+
+  .player-song {
+    height: 40px;
+  }
+
+  .player-cover {
+    width: 38px;
+    height: 38px;
+  }
+
   .player-details {
-    max-width: 130px;
+    max-width: calc(100% - 75px);
     overflow: hidden;
   }
 
@@ -1378,19 +1468,35 @@ button {
     text-overflow: ellipsis;
   }
 
+  .player-controls {
+    height: 31px;
+    gap: 15px;
+  }
+
+  .player-controls button {
+    font-size: 12px;
+  }
+
+  .big-play {
+    width: 32px;
+    height: 32px;
+  }
+
+  .player-progress {
+    height: 14px;
+    gap: 6px;
+  }
+
   .progress-track {
-    width: 48vw;
+    flex: 1;
+    width: auto;
+    min-width: 0;
   }
 }
 
 /* ================================================= */
 /* ACCOUNT */
 /* ================================================= */
-
-.top-account {
-  position: relative;
-  margin-left: auto;
-}
 
 .top-avatar {
   width: 38px;
@@ -1400,8 +1506,8 @@ button {
   padding: 0;
   border: 2px solid #202020;
   border-radius: 50%;
-  background: #D99AAD;
-  color: #29121A;
+  background: #C98A9D;
+  color: #210C14;
   font-size: 12px;
   font-weight: 700;
   cursor: pointer;
@@ -1410,7 +1516,7 @@ button {
 
 .top-avatar:hover {
   transform: scale(1.06);
-  border-color: #D6537F;
+  border-color: #C23E68;
 }
 
 .account-dropdown {
@@ -1452,8 +1558,8 @@ button {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: #D99AAD;
-  color: #29121A;
+  background: #C98A9D;
+  color: #210C14;
   font-size: 12px;
   font-weight: 700;
 }
