@@ -139,9 +139,9 @@ button {
 
   border-radius: 50%;
 
-  background: #78b98d;
+  background: #c8e8d0;
 
-  color: #182018;
+  color: #314536;
 
   font-size: 11px;
   font-weight: 700;
@@ -281,10 +281,10 @@ button {
   background:
     radial-gradient(
       circle at 78% 40%,
-      rgba(230, 83, 104, 0.35),
+      rgba(245, 165, 180, 0.35),
       transparent 25%
     ),
-    #26382a;
+    #587864;
 }
 
 .featured-copy {
@@ -295,7 +295,7 @@ button {
 }
 
 .featured-label {
-  color: #b4d3b9;
+  color: #d2ead8;
 
   font-size: 8px;
 
@@ -317,7 +317,7 @@ button {
 }
 
 .featured h1 em {
-  color: #b8d7be;
+  color: #d5edda;
 
   font-family: "Playfair Display", serif;
 
@@ -329,7 +329,7 @@ button {
 
   margin-top: 22px;
 
-  color: #b3c5b6;
+  color: #d0ddd3;
 
   font-size: 11px;
 
@@ -389,7 +389,7 @@ button {
 
   border-radius: 50%;
 
-  background: #78b98d;
+  background: #b8e6c4;
 
   filter: blur(70px);
 
@@ -667,10 +667,10 @@ button {
 
   border-radius: 50%;
 
-  background: #70a983;
+  background: #b8dfc1;
 
   box-shadow:
-    0 0 8px #8bc49a;
+    0 0 8px #d0f0d6;
 }
 
 
@@ -847,7 +847,7 @@ button {
 }
 
 .playlist-green {
-  background: #4f7048;
+  background: #91b99a;
 }
 
 
@@ -1725,9 +1725,9 @@ button {
 
   border-radius: 50%;
 
-  background: #78b98d;
+  background: #c8e8d0;
 
-  color: #182018;
+  color: #314536;
 
   font-size: 12px;
   font-weight: 700;
@@ -1740,7 +1740,7 @@ button {
 .top-avatar:hover {
   transform: scale(1.06);
 
-  border-color: #78b98d;
+  border-color: #c8e8d0;
 }
 
 .account-dropdown {
@@ -1794,9 +1794,9 @@ button {
 
   border-radius: 50%;
 
-  background: #78b98d;
+  background: #c8e8d0;
 
-  color: #182018;
+  color: #314536;
 
   font-size: 12px;
   font-weight: 700;
